@@ -4,6 +4,9 @@ var mainCam : Camera;
 static var playerScore01 : int = 0;
 static var playerScore02 : int = 0;
 
+static var testTouch1 : float = 0;
+static var testTouch2 : float = 0;
+
 var theSkin : GUISkin;
 
 var theBall : Transform;
@@ -28,6 +31,9 @@ function OnGUI() {
 	GUI.skin = theSkin;
 	GUI.Label (new Rect(Screen.width/2 - 150-20, 20, 100, 100),"" + playerScore01);
 	GUI.Label (new Rect(Screen.width/2 + 150-20, 20, 100, 100),"" + playerScore02);
+	
+	GUI.Label (new Rect(Screen.width/2 - 150-20, Screen.height - 60, 100, 100),"" + testTouch1);
+	GUI.Label (new Rect(Screen.width/2 + 150-20, Screen.height - 60, 100, 100),"" + testTouch2);
 
 	if(GUI.Button(new Rect(Screen.width/2 - 121/2, 20, 121, 53) , "RESET")) {
 		playerScore01 = 0;

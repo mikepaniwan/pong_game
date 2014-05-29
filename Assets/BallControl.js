@@ -9,12 +9,15 @@ function Start () {
 
 function Update() {
 	var xVel : float = rigidbody2D.velocity.x;
+	
+	
 	if(xVel < 18 && xVel > -18 && xVel != 0) {
 		if(xVel > 0) {
 			rigidbody2D.velocity.x = 20;
 		}else {
 			rigidbody2D.velocity.x = -20;
 		}
+		
 		
 		Debug.Log("Velocity Before = " + xVel);
 		Debug.Log("Velocity After = " + rigidbody2D.velocity.x);

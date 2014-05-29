@@ -6,5 +6,7 @@ function OnTriggerEnter2D (hitInfo : Collider2D) {
 		audio.Play();
 		GameManager.Score(wallName);
 		hitInfo.gameObject.SendMessage("ResetBall");
+		
+		
 	}
 }

@@ -257,7 +257,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 335303570}
-  m_Mass: 999999
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -280,6 +280,8 @@ MonoBehaviour:
   moveUp: 119
   moveDown: 115
   speed: 10
+  player: {fileID: 0}
+  mainCam: {fileID: 2051158467}
 --- !u!61 &335303574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -377,7 +379,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945999891}
-  m_Mass: 999999
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -400,6 +402,8 @@ MonoBehaviour:
   moveUp: 273
   moveDown: 274
   speed: 10
+  player: {fileID: 0}
+  mainCam: {fileID: 2051158467}
 --- !u!61 &945999894
 BoxCollider2D:
   m_ObjectHideFlags: 0
